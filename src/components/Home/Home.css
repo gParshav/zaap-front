@@ -1,0 +1,26 @@
+.dabba {
+    height: 200px;
+    width: 180px;
+    background-color: aqua;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.chain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.name{
+    background-color: white;
+    height: 50px;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+.name2{
+    margin-left: 10px;
+}
