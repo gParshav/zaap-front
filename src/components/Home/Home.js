@@ -11,7 +11,7 @@ function Home() {
 
   return (
     <>
-    <button onClick={handleClick} >Click</button>
+    <button onClick={handleClick} className="blue_button" >Click</button>
     <div className='chain'>
     
     {list.map((value, key) => {
