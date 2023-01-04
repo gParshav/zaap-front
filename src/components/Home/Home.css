@@ -1,12 +1,18 @@
-.dabba {
+.home__container {
     height: 200px;
     width: 180px;
-    background-color: aqua;
-    margin: 5px;
-    border-radius: 20px;
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px -3px rgb(147, 147, 147);
     padding: 10px;
+    transition: 0.2s;
 }
 
+.home__container:hover{
+    box-shadow: 0 0 10px -6px rgb(147, 147, 147);;
+    cursor: pointer;
+}
 
 .chain {
     display: flex;
@@ -14,13 +20,15 @@
     flex-wrap: wrap;
 }
 
-.name{
-    background-color: white;
+.home_container__box{
+    background-color: rgb(157, 124, 255);
     height: 50px;
-    border-radius: 20px;
+    color: white;
+    border-radius: 10px;
     padding: 3px;
 }
 
-.name2{
+.home_container__box__info{
     margin-left: 10px;
+    
 }

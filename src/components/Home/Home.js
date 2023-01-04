@@ -18,9 +18,9 @@ function Home() {
       console.log(value)
       return(
         <>
-          <div className='dabba' >
-            <div className='name'>
-                <h3 className='name2'>{value[1]}</h3>
+          <div className='home__container' >
+            <div className='home_container__box'>
+                <h3 className='home_container__box__info'>{value[1]}</h3>
             </div>
           </div>
         </>

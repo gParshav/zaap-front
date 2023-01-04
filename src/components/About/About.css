@@ -1,0 +1,23 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about__title {
+    width: 800px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 900;
+    font-size: 80px;
+    font-family: 'Inter';
+    color: rgb(0, 0, 0);
+}
+
+.page {
+  background: -webkit-linear-gradient(119.39deg, #FF1F73 6.43%, #8F1FFF 49.87%, #1FC8FF 91.42%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
