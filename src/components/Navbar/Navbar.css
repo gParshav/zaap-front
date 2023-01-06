@@ -30,6 +30,5 @@
 }
 
 .navbar__links_item:hover{
-    color: rgb(105, 105, 255);
-    text-decoration: underline;
+    color: rgb(83, 123, 255);
 }
