@@ -1,35 +1,35 @@
 .navbar {
-    width: 100%;
+    position: relative;
     display: flex;
     align-items: center;
-    height: 30px;
-    border-bottom: 1px solid black;
-    box-shadow: 5px;
+    height: 50px;
+    box-shadow: 5px 0px 15px -4px rgb(126, 126, 126);
     padding: 5px;
-    margin: none;
 }
 
 .navbar__title {
-    font-size: 20px;
-    font-weight: 900;
-    font-family: 'Inter';
+    /* font-family: 'Inter'; */
+    padding: 0px 10px;
+    justify-content: center;
     color: rgb(0, 0, 0);
 }
 
 .navbar__links {
-    margin-left: 40px;
     display: flex;
     flex: 1;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
 }
 
 .navbar__links_item{
     margin-left: 20px;
-    font-size: 15px;
-    font-weight: 900;
-    font-family: 'Inter';
-    color: rgb(0, 0, 0);
+    color: rgba(40, 40, 40, 0.82);
+    /*smooth transition*/
+    transition: ease 0.3s;
+}
+
+.navbar__links_item:hover{
+    color: rgb(105, 105, 255);
+    text-decoration: underline;
 }
