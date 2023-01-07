@@ -107,3 +107,14 @@
     background-color: #379bee !important;
     color: white !important;
 }
+
+.modal__top{
+    height: 70%;
+}
+
+.modal__bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+}
