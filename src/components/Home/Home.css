@@ -109,7 +109,12 @@
 }
 
 .modal__top{
-    height: 70%;
+    height: 10%;
+}
+
+.modal__middle{
+    margin-top: 20px;
+    height: 60%;
 }
 
 .modal__bottom{

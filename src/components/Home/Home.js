@@ -12,6 +12,9 @@ function Home() {
 
   // const [orders, setOrders] = useState([{id: 1,title:'Order' , customer_name: 'Pasha', amount: 100, status: 'pending', date: '2021-01-01'},{id: 1,title:'Order' , customer_name: 'Pasha', amount: 100, status: 'success', date: '2021-01-01'}])
   const [orders, setOrders] = useState([])
+  const [name, setName] = useState('')
+  const [item, setItem] = useState('')
+  const [amt, setAmt] = useState(0)
   const customStyles = {
     content: {
       top: '50%',
@@ -25,7 +28,7 @@ function Home() {
     },
   };
   useEffect(() => {
-    fetch('http://localhost:80/api/posts?email=hari@gmail.com', {
+    fetch('http://localhost:80/api/posts?shop_email=hari@gmail.com', {
       method: 'GET', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',
@@ -33,7 +36,7 @@ function Home() {
     })
     .then((response) => response.json())
     .then((json) => {
-      console.log(json);
+      // console.log(json);
       setOrders(json) })
     .catch((error) => {
       console.error('Error:', error);
@@ -44,8 +47,35 @@ function Home() {
     setOrders([...orders, {id: 1,title:'Order' , customer_name: 'Pasha', amount: 100, status: 'success', date: '2021-01-01'}])
   }
 
+  const handleClick2 = () => {
+
+    const data = {
+      "title": item,
+      "customer_name": name,
+      "shop_email": "hari@gmail.com",
+      "amount": amt,
+      "status":"false"
+    };
+    // console.log(data)
+    fetch('http://localhost:80/api/posts', {
+      method: 'POST', // or 'PUT'
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+    .then((response) => response.json())
+    .then((json) => {
+      console.log(json);
+      // setOrders(json) 
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+  }
+
   const handleSubmit = () => {
-    handleClick();
+    handleClick2();
     closeModal();
   }
 
@@ -80,6 +110,15 @@ function Home() {
       <div className='modal__top'>
         <h2>Add order</h2>
       </div>
+      <div className="modal__middle">
+        <input placeholder='enter name' value={name} onChange={(e) => setName(e.target.value)}/>
+        <input placeholder='enter order' value={item} onChange={(e) => setItem(e.target.value)}/>
+        {/* <select>
+          <option>Pasta</option>
+          <option>Cake</option>
+        </select> */}
+        <input placeholder='enter amount' value={amt} onChange={(e) => setAmt(e.target.value)}/>
+      </div>
         <div className='modal__bottom'>
           <button onClick={closeModal} >Cancel</button>
           <button onClick={handleSubmit}>Submit</button>
@@ -92,7 +131,7 @@ function Home() {
       <div className='home_items'>
       
         {orders.map((value, key) => {
-          console.log(value)
+          {/* console.log(value) */}
           return(
             <>
               <div className='home__container' >
