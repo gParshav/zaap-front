@@ -60,14 +60,15 @@
 }
 
 .home_container__name{
-    color: #545454;
+    color: #767676;
     display: flex;
+    font-weight: 600;
     align-items: center;
     font-size: 15px;
 }
 
 .home_container__amount{
-    color: #545454;
+    color: #7e7e7e;
     font-weight: 500;
     padding: 10px;
 }
