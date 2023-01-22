@@ -9,14 +9,15 @@ import { useState } from 'react';
 
 function App() {
   const [profile, setProfile] = useState();
+  const [dark, setDark] = useState(true)
   return (
     <div className="App">
         <Router>
-       <Navbar profile={profile}/>
+       <Navbar profile={profile} setDark={setDark}/>
            <Routes>   
-             <Route exact path="/" element={<About />} />
-             <Route path="/home" element={<Home />} />
-             <Route path="/login" element={<Login profile={profile} setProfile={setProfile}/>} />
+             <Route exact path="/" element={<About dark={dark}/>} />
+             <Route path="/home" element={<Home dark={dark}/>} />
+             <Route path="/login" element={<Login profile={profile} dark={dark} setProfile={setProfile}/>} />
            </Routes>
          </Router>
       

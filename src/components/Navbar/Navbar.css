@@ -72,14 +72,29 @@
         padding-top: 40px;
     }
 
+
     .navbar__links {
         /* Other styles */
         animation: slideIn 0.3s ease-in-out;
     }
 
+    .navbar__links__item {
+        /* Other styles */
+        animation: slideIn2 0.5s ease-in-out;
+    }
+
       @keyframes slideIn {
         from {
           transform: translateX(100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slideIn2 {
+        from {
+          transform: translateY(100%);
         }
         to {
           transform: translateY(0);

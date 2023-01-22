@@ -28,7 +28,7 @@ import {
 
 const REDIRECT_URI = 'http://localhost:3000'
 
-function Login({profile, setProfile}) {
+function Login({profile, setProfile, dark}) {
   const [provider, setProvider] = useState('');
   
   console.log(profile)

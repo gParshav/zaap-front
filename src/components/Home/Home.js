@@ -9,7 +9,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 
 
-function Home() {
+function Home({dark}) {
 
   // const [orders, setOrders] = useState([{id: 1,title:'Order' , customer_name: 'Pasha', amount: 100, status: 'pending', date: '2021-01-01'},{id: 1,title:'Order' , customer_name: 'Pasha', amount: 100, status: 'success', date: '2021-01-01'}])
   const [orders, setOrders] = useState(null);
