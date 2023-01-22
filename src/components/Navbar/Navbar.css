@@ -48,6 +48,12 @@
         margin-left: 70vw;
         font-size: 30px !important;
     }
+    
+
+    .navbar__links_item{
+        margin-bottom: 50px;
+        font-weight: bold;
+    }
 
     .navbar__links{
         display: flex;
@@ -58,11 +64,12 @@
         top: 60px;
         right: 0px;
         width: 300px;
-        background-color: aqua;
+        background-color: rgb(187, 241, 241);
         height: 100vh;
         margin: auto;
         padding: 20px;
         transition: all 0.3s ease-in-out;
+        padding-top: 40px;
     }
 
     .navbar__links {
