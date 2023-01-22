@@ -32,3 +32,54 @@
 .navbar__links_item:hover{
     color: rgb(83, 123, 255);
 }
+@media(min-width:769px){
+    .menu__icon{
+        display: none !important;
+    }
+}
+
+
+@media(max-width:769px) {
+
+    .menu__icon{
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        margin-left: 70vw;
+        font-size: 30px !important;
+    }
+
+    .navbar__links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 60px;
+        right: 0px;
+        width: 300px;
+        background-color: aqua;
+        height: 100vh;
+        margin: auto;
+        padding: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar__links {
+        /* Other styles */
+        animation: slideIn 0.3s ease-in-out;
+    }
+
+      @keyframes slideIn {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+      
+      
+      
+    
+}
