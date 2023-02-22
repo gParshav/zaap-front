@@ -16,7 +16,7 @@ function Home({dark}) {
   const [modalIsOpen, setOpenModal] = useState(false)
 
   const getOrders = () => {
-    fetch('http://localhost:80/api/posts?shop_email=hari@gmail.com', {
+    fetch('https://zaap-back.onrender.com/api/posts?shop_email=hari@gmail.com', {
       method: 'GET', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',
